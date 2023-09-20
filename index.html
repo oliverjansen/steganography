@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Steganography</title>
+    <meta content="Ivan" name="author" />
+    <meta
+      content="This demo shows the core functionality of JavaScript library steganography.js, which provides functions to hide or read data in or from the alpha channel of an image."
+      name="description"
+    />
+    <meta
+      content="steganography, text hiding, javascript, html5"
+      name="keywords"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="d-flex justify-content-center gap-2 my-5">
+        <button
+          id="encode"
+          onclick="encode()"
+          type="button"
+          class="btn btn-success btn-lg"
+        >
+          Encode
+        </button>
+        <button
+          id="decode"
+          onclick="decode()"
+          type="button"
+          class="btn btn-warning btn-lg"
+        >
+          Decode
+        </button>
+      </div>
+      <div id="right" class="row image-encoded">
+        <div id="original" class="row" hidden>
+          <h2>Plain Image:</h2>
+          <div class="card">
+            <img id="img" class="card-img" src="" />
+          </div>
+        </div>
+        <div id="stego" class="row">
+          <h5>Encoded Image:</h5>
+          <div class=" ">
+            <img id="cover" class="card-img w-25 m-auto" src="" />
+          </div>
+          <div class="row download-btn text-center">
+            <a
+              id="download"
+              class="btn btn-success text-center"
+              download="Steganography.png"
+              rel="nofollow"
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+      <div style="display: none" id="upload-section" class="mb-2">
+        <h5 class="text-dark upload">Upload:</h5>
+        <input id="file" type="file" />
+      </div>
+      <div class="row px-2" id="message-section" style="display: none">
+        <h2 class="text-warning"></h2>
+        <textarea
+          id="text"
+          class="secretmessage p-2"
+          placeholder="Enter Message"
+        ></textarea>
+      </div>
+      <div class="btns btn-section">
+        <button id="hide" class="btn btn-primary" style="display: none">
+          Submit
+        </button>
+        <button id="read" class="btn btn-primary" style="display: none">
+          Submit
+        </button>
+      </div>
+
+      <div id="messageArea" class="row">
+        <h5 class="text-dark">Message:</h5>
+        <div class="mb-3 bg-success text-white" id="message"></div>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+    <script type="text/javascript" src="js/steganography.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+
+  <script></script>
+</html>

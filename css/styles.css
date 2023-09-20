@@ -1,0 +1,69 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.secretmessage {
+  width: 100%;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.image-encoded {
+  position: static;
+  margin: 0px auto;
+  width: 100%;
+}
+
+#download {
+  display: flex;
+  margin: 0px auto;
+  width: 100px;
+  margin: 5px auto;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+#stego {
+  width: 100%;
+  text-align: center;
+}
+.download-btn {
+  width: 150px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.upload {
+  display: flex;
+  width: 100vw;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.upload-section {
+  margin-top: 50px;
+}
+
+#file {
+  display: flex;
+  padding: 0px;
+}
+
+#messageArea {
+  color: #000000;
+}
+
+.btns {
+  justify-content: center;
+}
+
+#message {
+  padding: 5px;
+}
